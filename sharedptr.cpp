@@ -18,6 +18,10 @@ int main(){
     pointer3.reset();
     std::cout << "pointer.use_count() =" << pointer.use_count() << std::endl;
     std::cout << "pointer2.use_count() =" << pointer2.use_count() << std::endl;
+    std::cout << "pointer3.use_count() =" << pointer3.use_count() << std::endl;
+
+    std::cout << "*pointer2 = " << *pointer2 << std::endl;
+    //std::cout << "*pointer3 = " << *pointer3 << std::endl; //segmentation fault
 
     auto pointer4 = pointer.get();
     std::cout << "pointer.use_count() =" << pointer.use_count() << std::endl;
